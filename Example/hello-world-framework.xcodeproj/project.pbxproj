@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		342E7BEA17E4C08FE5977B6F /* Pods_hello_world_framework_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hello_world_framework_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3544A936B1256956C1F91E76 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3544A936B1256956C1F91E76 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* hello-world-framework_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hello-world-framework_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,8 +62,8 @@
 		75BA318EF973BC9E8EBFBDC6 /* Pods-hello-world-framework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hello-world-framework_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hello-world-framework_Example/Pods-hello-world-framework_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		86056E052F4EB7C2ED8F87B7 /* Pods_hello_world_framework_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hello_world_framework_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9A1F2CEF59221F0B5FF58E3A /* hello-world-framework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "hello-world-framework.podspec"; path = "../hello-world-framework.podspec"; sourceTree = "<group>"; };
-		C0020789C77085FA779FDDAF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9A1F2CEF59221F0B5FF58E3A /* hello-world-framework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "hello-world-framework.podspec"; path = "../hello-world-framework.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C0020789C77085FA779FDDAF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CA7CC850C1D2B7DFBB1585DF /* Pods-hello-world-framework_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hello-world-framework_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hello-world-framework_Tests/Pods-hello-world-framework_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CBEE8250A7D7A81E0B06871D /* Pods-hello-world-framework_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hello-world-framework_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-hello-world-framework_Example/Pods-hello-world-framework_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E7FCBCD524847E81F5B6B262 /* Pods-hello-world-framework_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hello-world-framework_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hello-world-framework_Tests/Pods-hello-world-framework_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -299,15 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-hello-world-framework_Tests-checkManifestLockResult.txt",
 			);
@@ -321,15 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-hello-world-framework_Example/Pods-hello-world-framework_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/hello-world-framework/hello_world_framework.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hello_world_framework.framework",
 			);
@@ -343,15 +335,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-hello-world-framework_Example-checkManifestLockResult.txt",
 			);
