@@ -1,0 +1,28 @@
+annotations:
+  beta.screwdriver.cd/executor: jenkins-corp
+  resource: IOS
+  cache_dir: /cache
+  artifacts_dir: ./app_root/artifacts
+  platform_dir: /opt/screwdriver/platform
+  platform: ios
+  platform_version: 0.2.121
+environment:
+  LC_ALL: en_US.UTF-8
+  LANG: en_US.UTF-8
+  GEM_PATH: /usr/local
+  BUILD_TOOLS_DIR: /opt/screwdriver/platform/bin
+  BUILD_DIR: build
+  ARTIFACTORY_USE_SSHCA: true
+  DEVELOPER_DIR: /Applications/Xcode.app/Contents/Developer
+  PROVISIONING_PROFILES: Enterprise_Developer_Cert MM_In_House
+  KEYCHAIN: sd_MMEnterprise
+secrets:
+  - COCOAPODS_TRUNK_TOKEN
+image: 10-13_92-9C40b_20180918034247_platform
+jobs:
+  main:
+    requires: [~pr, ~commit]
+    steps:
+      - echo: echo "hello world"
+
+
