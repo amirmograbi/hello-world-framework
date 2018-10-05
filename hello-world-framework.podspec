@@ -21,14 +21,15 @@ Pod::Spec.new do |s|
 This pod was made to test pushing to trunk from screwdriver
                        DESC
 
-  s.homepage         = 'https://www.oath.com/'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.homepage         = 'https://www.oath.com'
+  s.license          = { :type => 'Commercial', :file => 'LICENSE.txt' }
   s.author           = { 'amograbi15' => 'amir.mograbi@oath.com' }
-  s.source           = { :git => 'https://github.com/amirmograbi/hello-world-framework.git', :tag => s.version.to_s }
+  s.source           = { :http => 'https://yahoo.bintray.com/maven/hello_world_framework.zip' }
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'hello-world-framework/Classes/**/*'
+  s.source_files = "hello_world_framework.framework/Headers/*.h"
+  s.ios.vendored_frameworks = "hello_world_framework.framework"
   
   # s.resource_bundles = {
   #   'hello-world-framework' => ['hello-world-framework/Assets/*.png']
